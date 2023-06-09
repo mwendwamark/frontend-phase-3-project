@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -45,7 +47,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  margin: 20px;
   text-align: center;
 }
 
@@ -53,8 +55,124 @@
   margin: 0;
   padding: 0;
   font-weight: 900;
-  font-family: "Clicker Script";
+  font-family: "Clicker Script",cursive;
   position: absolute;
   top: 20px;
   left: 20px;
+}
+/* ===========Home =========== */
+.logo img {
+  color: rgb(0, 221, 255);
+  background: rgb(0, 221, 255);
+  padding-top: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 87px;
+}
+
+.logo span {
+  font-weight: 900;
+  color: rgb(0, 221, 255);
+  font-family: "Clicker Script", cursive;
+}
+
+.house-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.house-item {
+  margin: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.house-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.house-info {
+  margin-top: 10px;
+}
+
+.house-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.house-info p {
+  margin: 5px 0;
+}
+
+.home-page-overview {
+  font-size: 24px;
+  margin: 20px 0 10px; /* Adjust the top margin value as needed */
+  padding-top: 90px;
+  font-weight: 200;
+  font-family: "poppins";
+}
+.information-p {
+  color: whitesmoke;
+  font-family: "poppins";
+  font-size: 16px;
+}
+.information-p span {
+  color: rgb(0, 221, 255);
+  align-items: flex-start;
+  font-weight: 500;
+  font-family: "poppins";
+}
+.information-p em {
+  color: rgb(108, 237, 72);
+}
+
+.explore-blog-text {
+  margin-top: 20px;
+  font-style: italic;
+}
+.add-house-form {
+  width: 50%;
+  /* background: red; */
+  border-bottom: 4px solid white;
+  /* border-left: 1px solid rgb(0, 221, 255); */
+  border-top: 1px solid white;
+
+  border-radius: 19px;
+}
+
+.input-location-field,
+.input-rent-field,
+.input-house-field {
+  width: 50%;
+  border-radius: 7px;
+  height: 30px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.input-description-field {
+  width: 50%;
+  height: 70px;
+  border-radius: 7px;
+}
+.add-house-form .add-house-button {
+  width: 30%;
+  height: 40px;
+  background: green;
+  margin: 0 auto; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.add-house-form label {
+  display: block;
+  font-weight: bold;
+  position: absolute;
+  margin-left: 70px;
 }
