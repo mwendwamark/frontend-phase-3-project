@@ -20,7 +20,7 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 } */
 
-@keyframes logo-spin {
+/* @keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
@@ -41,7 +41,7 @@
 
 .read-the-docs {
   color: #888;
-}
+} */
 /* Common Styles */
 .container {
   display: flex;
@@ -55,7 +55,7 @@
   margin: 0;
   padding: 0;
   font-weight: 900;
-  font-family: "Clicker Script",cursive;
+  font-family: "Clicker Script", cursive;
   position: absolute;
   top: 20px;
   left: 20px;
@@ -152,7 +152,8 @@
   border-radius: 7px;
   height: 30px;
   margin-bottom: 10px;
-  position: relative;
+  position:relative;
+  /* margin-: 30px; */
 }
 .input-description-field {
   width: 50%;
@@ -163,10 +164,10 @@
   width: 30%;
   height: 40px;
   background: green;
-  margin: 0 auto; 
+  margin: 0 auto;
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -175,4 +176,224 @@
   font-weight: bold;
   position: absolute;
   margin-left: 70px;
+}
+.nav-link-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px;
+  padding: 0 20px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 40%;
+  font-size: 24px;
+  padding-top: 20px;
+}
+
+.nav-links-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: lightblue;
+}
+
+.nav-link {
+  display: inline-block;
+  margin-right: 10px;
+  padding-bottom: 25px;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: rgb(0, 221, 255);
+  font-weight: bold;
+  padding: 10px;
+  font-size: 29px;
+  letter-spacing: 3px;
+}
+
+.nav-link a:hover {
+  color: rgb(0, 221, 255);
+  border-bottom: 2px solid rgb(0, 221, 255);
+  border-radius: 7px;
+}
+
+.nav-link a.active {
+  border-radius: 7px 7px 0 0;
+}
+.add-house-form label {
+  margin-right: 20px;
+}
+/* ===========Form Component Stylings======= */
+.form-container {
+  width: 400px;
+  margin: 120px auto;
+  padding: 20px;
+  border-bottom: 1px solid rgb(0, 221, 255);
+  border-top: 1px solid #ccc;
+  border-radius: 14px;
+  margin-left: 500px;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  margin-top: 200px;
+}
+.form-container h2 {
+  margin-top: 0;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 80%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+button[type="submit"],
+button[type="reset"] {
+  display: block;
+  width: 85%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-items: center;
+}
+
+button[type="reset"] {
+  background-color: #f44336;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+  opacity: 0.8;
+}
+/* ======Blogs Styling====== */
+.blog-container{
+  /* background: red; */
+  align-items: flex-start;
+}
+.blogs-container {
+  width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  display: flex;
+  /* background: red; */
+}
+
+.blogs-heading {
+  font-size: 34px;
+  margin-top: 100px;
+  margin-right: 900px;
+  left: 0;
+  justify-content: flex-start;
+  top: 20px;
+  left: 20px;
+  letter-spacing: 2px;
+  text-decoration: underline rgb(0, 221, 255);
+}
+
+.blog-item {
+  border-top: 1px solid #ccc;
+  border-right: 1px solid rgb(0, 221, 255);
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  flex-basis: 33.33%;
+  margin-top: 40px;
+  margin-right: 40px;
+}
+
+.paragraph-p {
+  margin-right: 800px;
+  font-size: 20px;
+}
+
+.blog-h3 {
+  margin-right:700px;
+  font-size: 24px;
+}
+
+.blog-author {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.blog-estate {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.blog-ratings span,
+.blog-comments span,
+.blog-author span,
+.blog-estate span {
+  font-size: 20px;
+  font-weight: 300;
+  border-bottom: 1px solid rgb(0, 221, 255);
+}
+
+.blog-author em,
+.blog-estate em,
+.blog-ratings em,
+.blog-comments em {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.blog-likes {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.like-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 20px;
+  color: rgb(0, 221, 255);
+  margin-right: 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-button {
+  background-color: rgb(0, 221, 255);
+  color: black;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.like-btn:hover {
+  color: red;
+}
+
+.delete-button:hover {
+  color: rgb(0, 0, 0);
+  background: crimson !important;
+  border: transparent !important;
 }

@@ -41,7 +41,7 @@ function Blogs() {
     })
       .then((response) => response.json())
       .then((data) => {
-        // Update the blogs state with the updated likes from the backend
+        // Update the blogs state wihome pageth the updated likes from the backend
         const updatedBlogs = blogs.map((blog) => {
           if (blog.id === blogId) {
             return {
@@ -79,45 +79,50 @@ function Blogs() {
 
   return (
     <>
-      <h1 className="logo">
-        <span>Real Estste</span>Blog.
-      </h1>
-      <Navbar></Navbar>
-      <h1 className="blogs-heading">Blogs</h1>
-      <h3 className="blog-h3">Welcome to our Blog page</h3>
-      <p className="paragraph-p"> View what others say:</p>
-      <div className="blogs-container">
-        {blogs.map((blog) => (
-          <div className="blog-item" key={blog.id}>
-            <p className="blog-author">
-              <FontAwesomeIcon icon={faUser} /> <span>Author :</span>{" "}
-              <em>{blog.owner_id}</em>{" "}
-            </p>
-            <p className="blog-estate">
-              {" "}
-              <span>Estate:</span> <em>{blog.house_id}</em>{" "}
-            </p>
-            <p className="blog-ratings">
-              {" "}
-              <span>Ratings out of 10:</span> <em>{blog.ratings}</em>{" "}
-            </p>
-            <p className="blog-comments">
-              <span>Comments:</span> <em>{blog.comments}</em>{" "}
-            </p>
-            <div className="blog-likes">
-              <button className="like-btn" onClick={() => handleLike(blog.id)}>
-                <FontAwesomeIcon icon={faHeart} />
+      <div className="blog-container">
+        <h1 className="logo">
+          <span>Real Estste</span>Blog.
+        </h1>
+        <Navbar></Navbar>
+        <h1 className="blogs-heading">Blogs</h1>
+        <h3 className="blog-h3">Welcome to our Blog page</h3>
+        <p className="paragraph-p"> View what others say:</p>
+        <div className="blogs-container">
+          {blogs.map((blog) => (
+            <div className="blog-item" key={blog.id}>
+              <p className="blog-author">
+                <FontAwesomeIcon icon={faUser} /> <span>Author :</span>{" "}
+                <em>{blog.owner_id}</em>{" "}
+              </p>
+              <p className="blog-estate">
+                {" "}
+                <span>Estate:</span> <em>{blog.house_id}</em>{" "}
+              </p>
+              <p className="blog-ratings">
+                {" "}
+                <span>Ratings out of 10:</span> <em>{blog.ratings}</em>{" "}
+              </p>
+              <p className="blog-comments">
+                <span>Comments:</span> <em>{blog.comments}</em>{" "}
+              </p>
+              <div className="blog-likes">
+                <button
+                  className="like-btn"
+                  onClick={() => handleLike(blog.id)}
+                >
+                  <FontAwesomeIcon icon={faHeart} />
+                </button>
+                <span>{blog.likes} Likes</span>
+              </div>
+              <button
+                className="delete-button"
+                onClick={() => handleDelete(blog.id)}
+              >
+                Delete
               </button>
-              <span>{blog.likes} Likes</span>
             </div>
-            <button
-              className="delete-button"
-              onClick={() => handleDelete(blog.id)}
-            >
-              Delete
-            </button>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </>
   );

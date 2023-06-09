@@ -101,7 +101,7 @@ function Home() {
       <div className="add-house-form">
         <h2 className="">Feel free to add a house</h2>
 
-        <form>
+        <form className="add-house-form-input">
           <label htmlFor="image_url">Image URL:</label>
           <input
             className="input-house-field"
