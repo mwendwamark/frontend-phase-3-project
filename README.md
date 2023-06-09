@@ -2,11 +2,11 @@
 
 ## [Real Estate Blog](https://phase-3-react-sinatra-project-h1sfwvu92-mwendwamark.vercel.app/)
 
-
 ## [Link to backend Repository](https://github.com/mwendwamark/phase-3-sinatra-react-project-cloned)
+
 ## Real Estate Blog
 
-Welcome to the Real Estate Blog! This is a web application that allows users to browse through available houses, like  some of the comments, and add new houses to the collection. It provides a platform for users to explore and interact with real estate listings in an intuitive and user-friendly manner.
+Welcome to the Real Estate Blog! This is a web application that allows users to browse through available houses, like some of the comments, and add new houses to the collection. It provides a platform for users to explore and interact with real estate listings in an intuitive and user-friendly manner.
 
 ## Features
 
@@ -22,6 +22,8 @@ To set up the project locally, please follow these steps:
 
    ```shell
    git clone https://github.com/mwendwamark/frontend-phase-3-project
+   ```
+
 ````
 
 2. Navigate to the project directory:
@@ -66,7 +68,6 @@ To set up the project locally, please follow these steps:
 
 This project is licensed under the [MIT License](LICENSE).
 
-```
+
 
 Feel free to modify the content according to your specific project details, such as the repository URL, your name, and any additional technologies or features used in your project.
-
